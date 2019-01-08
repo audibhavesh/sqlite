@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sqlite</string>
+    <string name="id">Enter the id</string>
+    <string name="enter_the_id">Enter the id</string>
+    <string name="name">Enter the name</string>
+    <string name="age">Enter the age</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="user">userdata</string>
+</resources>

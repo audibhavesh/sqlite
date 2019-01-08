@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|number"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:id="@+id/id"
+            android:layout_marginTop="8dp"
+            android:hint="@string/id"
+            android:autofillHints="" tools:targetApi="o"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"/>
+    <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="18dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/name"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="18dp"
+            android:hint="@string/name"
+            android:layout_below="@+id/id" android:inputType=""/>
+    <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/age"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="16dp"
+            android:hint="@string/age"
+            android:layout_below="@+id/name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp" android:inputType="number"/>
+    <Button
+            android:text="@string/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/add"
+            android:layout_marginTop="192dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:onClick="add"/>
+    <Button
+            android:text="@string/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="134dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/add"
+            android:id="@+id/update"
+            android:layout_marginLeft="134dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="update"/>
+    <Button
+            android:text="@string/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="35dp"
+            android:layout_alignTop="@+id/add"
+            android:id="@+id/delete"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+
+            android:layout_marginRight="35dp"
+            android:onClick="delete"/>
+    <ListView
+            android:layout_width="366dp"
+            android:layout_height="245dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/userdata"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/update"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
